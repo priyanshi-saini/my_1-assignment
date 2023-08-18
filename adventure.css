@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color:#c3c3e3;
+    padding: 20px;
+}
+.navbar h1{
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(84, 6, 17)
+}
+.navbar ul{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.navbar li{
+    list-style: none;
+    transition: 1s;
+}
+.navbar li:hover{
+    transform: scale(1.15);
+    color: white;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(adven.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: crimson;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 8px 15px;
+    background:red;
+    border-radius: 30px;
+    color:whitesmoke;
+    transition: 1s;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(125, 125, 225);
+}
+.title .line{
+    margin-bottom: 30px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .row .col img{
+    width: 80%;
+}
+.events .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+p{
+    color:rgb(42, 42, 66);
+    padding: 0px 40px;
+    font-size: small;
+}
+.events .ctn{
+    margin-top: 30px;
+}
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(explore.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+    font-size: 7vmin;
+}
+.explore-content line{
+    margin-bottom: 50px;
+}
+.explore-content p{
+    color: rgb(212, 205, 205);
+}
+.explore-content ctn{
+    margin-top: 40px;
+
+}
+.content-col line{
+    margin-bottom:50px;
+}
+.content-col{
+    width: 40%;
+}
+.img-col{
+    width: 60%;
+}
+.tours .img-gar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-gar img{
+    max-width: 250px; 
+    margin: 10px;   
+    width: 100%;
+    align-items: center;
+}
+.content-col h1{
+    font-size:3vmin;
+    color: #484872;
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.content-col p{
+    padding: 0px;
+    margin: 30px auto;
+}
+.content-col .ctn{
+    margin-left: 100px;
+}
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0px;
+    background:#484872;
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+  
+@media only screen and (max-width:850px){
+    
+    .row{
+        flex-direction: column;
+    }
+    .img-col{
+        max-width: 90%;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .explore-content{
+        width: 100%;
+    }
+    .tours .col{
+        width: 100%;
+    }
+    .img-gar{
+        justify-content: center;
+        align-items: center;
+    }
+    .img-gar img{
+        width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.ctn:hover{
+    background: white;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px #0000003f;
+    transform: scale(1.04);
+}
+li:hover{
+    color:#fc036b;
+    cursor: zoom-out;
+    transform: scale(1.04);
+}
+
+
+
+
+
+
+
+
+
+
+
